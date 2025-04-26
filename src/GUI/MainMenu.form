@@ -14,7 +14,7 @@
         </constraints>
         <properties>
           <font size="20" style="1"/>
-          <text value="Airline Online Booking System"/>
+          <text value="Car Service System"/>
         </properties>
       </component>
       <component id="e45a8" class="javax.swing.JButton" binding="customerManagementButton">

@@ -174,6 +174,10 @@ public class JobManagement extends BaseManagementPanel {
 
     private void addJobRecord() {
         addJobButton.addActionListener(e -> {
+            if (!validateInputs()) {
+                return;
+            }
+
             // Generate a job ID
             String jobID;
             try {
@@ -181,10 +185,6 @@ public class JobManagement extends BaseManagementPanel {
             } catch (SQLException ex) {
                 showError("Failed to generate a job ID.");
                 throw new RuntimeException(ex);
-            }
-
-            if (!validateInputs()) {
-                return;
             }
 
             Job job = getJob(jobID);
