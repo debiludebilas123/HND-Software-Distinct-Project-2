@@ -31,7 +31,7 @@ public class JobManagement extends BaseManagementPanel {
     private JComboBox paymentStatusComboBox;
     private JButton showLongestStayingCarButton;
     private JButton showAverageCustomerSpendingButton;
-    private final String[] jobDatabaseColumnNames = {"jobID", "regNo", "garageID", "dateIn", "dateOut", "cost"};
+    private final String[] jobDatabaseColumnNames = {"jobID", "regNo", "garageID", "dateIn", "dateOut", "cost", "paymentStatus"};
 
     public JobManagement(JFrame frame) {
         super(frame, null, null);
